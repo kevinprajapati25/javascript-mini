@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="info-div">
+            <h1>Love Calculator</h1>
+
+        </div>
+        <div class="inside-div">
+            <input id="name" type="text" placeholder="Your Name">
+            <span>+</span>
+            <input id="lname" type="text" placeholder="Lover Name">
+            
+        </div>
+        <div class="button-div">
+            <button onclick="click1()">Love You</button>
+        </div>
+        <div class="result-div">
+            <h3 id="result"></h3>
+        </div>
+    </div>
+    <script>
+       function click1(){
+            var name = document.getElementById("name").value;
+            var lname = document.getElementById("lname").value;
+            if(name === ""){
+                alert("Input place is empty");
+            }else if(lname === ""){
+                alert("Input place is empty");
+            }else if(!isNaN(name)){
+                alert("Only characters are allow");
+            }else if(!isNaN(lname)){
+                alert("Only characters are allow");
+            }
+            else{
+                  
+           var num1 = Math.random() * 100 + 1;
+           var num2 = Math.floor(num1);
+           document.getElementById("result").innerHTML = "The percentage of your love is "+ num2 + " %";
+            }
+         
+       }
+
+    </script>
+</body>
+</html>

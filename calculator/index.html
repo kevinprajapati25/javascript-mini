@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <h1>Calculator</h1>
+        <div class="inside-div">
+            <div class="input-div">
+                <input type="text" placeholder="Number" id="num1">
+                <input type="text" placeholder="Number" id="num2">
+            </div>
+            <div class="result-div">
+                <p id="res">Result will be shown here</p>
+            </div>
+            <div class="btn-div">
+                <button onclick="add()">+</button>
+                <button onclick="sub()">-</button>
+                <button onclick="mul()">*</button>
+                <button onclick="div()">/</button>
+                <button onclick="del()">C</button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function add(){
+            var num1 = document.getElementById("num1").value;
+            var num2 = document.getElementById("num2").value;
+            var result = parseFloat(num1) + parseFloat(num2);
+            document.getElementById("res").innerHTML = "The Additon of two numbers is " + result;
+        }
+        function sub(){
+            var num3 = document.getElementById("num1").value;
+            var num4 = document.getElementById("num2").value;
+            var result1 = parseFloat(num3) - parseFloat(num4);
+            document.getElementById("res").innerHTML = "The Additon of two numbers is " + result1;
+        }
+        function mul(){
+            var num5 = document.getElementById("num1").value;
+            var num6 = document.getElementById("num2").value;
+            var result2 = parseFloat(num5) * parseFloat(num6);
+            document.getElementById("res").innerHTML = "The Additon of two numbers is " + result2;
+        }
+        function div(){
+            var num7 = document.getElementById("num1").value;
+            var num8 = document.getElementById("num2").value;
+            var result3 = parseFloat(num7) / parseFloat(num8);
+            document.getElementById("res").innerHTML = "The Additon of two numbers is " + result3;
+        }
+        function del(){
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("res").innerHTML = "Result will be shown here";
+
+        }
+    </script>
+</body>
+</html>

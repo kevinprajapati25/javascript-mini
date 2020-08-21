@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#f9f7d9 ;
+}
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(60deg,rgba(210,145,158,1),rgba(104, 181, 240,1)) ;
+    clip-path: polygon(0 0, 100% 0, 100% 80%,50% 100%, 0% 80%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-div h1{
+    margin-bottom: 30px;
+    color:black;
+    text-shadow: 4px 6px 3px rgba(0,0,0,0.5);
+}
+.inside-div{
+    width: 500px;
+    height: 300px;
+    background-color: #f9f7d9;
+    border-radius: 10px;
+    border: 2px solid white;
+    box-shadow: 5px 1px 20px 5px rgba(104, 181, 240,0.3);
+}
+.input-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+}
+input{
+    margin-top: 50px;
+    height: 40px;
+    background-color:#f9f7d9 ;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+::placeholder{
+    font-size: 1.2rem;
+    
+
+}
+.result-div{
+    width: 250px;
+    height: 20px;
+    
+    margin: 30px auto;
+}
+.result-div p{
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+}
+.btn-div{
+    width: 250px;
+    height: 40px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-div button{
+    width:200px ;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.56s;
+    background:linear-gradient(60deg,rgba(210,145,158,1),rgba(104, 181, 240,1)) ; 
+    
+}
+.btn-div button:hover{
+    background: linear-gradient(60deg,rgba(104, 181, 240,1),rgba(210,145,158,1));
+}

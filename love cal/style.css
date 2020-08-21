@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background-color: #B3696C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info-div{
+    color: whitesmoke;
+    margin-bottom: 20px;
+    animation: anime 1s linear infinite alternate-reverse;
+}
+@keyframes anime{
+    from{
+        transform: scale(0.8);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.inside-div{
+    width: 700px;
+    height: 200px;
+    background-color: #FF969A;
+    border-radius: 10px;
+    border: 7px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
+    
+
+}
+span{
+    margin-top:90px ;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+input{
+    margin-top: 90px;
+    background-color: #FF969A;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 250px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+::placeholder{
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+button{
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    height: 40px;
+    background-color:#d3dbff ;
+    color: black;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background: white;
+    color: violet;
+}
+.result-div{
+    width: 450px;
+    height: 40px;
+    background-color: rgb(156, 134, 134);
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+    outline: none;
+    border-radius: 2px;
+    color: white;
+}

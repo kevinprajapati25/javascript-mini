@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-div">
+        <h1>BMI CALCULATOR</h1>
+        <div class="inside-div">
+            <div class="input-div">
+                <input type="text" placeholder="Weight" id="wt" required>
+                <input type="text" placeholder="Height" id="ht" required>
+            </div>
+            <div class="result-div">
+                <p id="rs"></p>
+
+            </div>
+            <div class="btn-div">
+                <button onclick="click1()">Click</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function click1(){
+            var wt = document.getElementById("wt").value;
+            var ht = document.getElementById("ht").value;
+            var result = parseFloat(wt) / parseFloat(ht) * parseFloat(ht);
+            var res1 = Math.floor(result);
+            document.getElementById("rs").innerHTML = "The BMI is " + res1;
+        }
+    </script>
+</body>
+</html>

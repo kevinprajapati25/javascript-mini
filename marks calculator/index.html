@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="main-div">
+        
+        <div class="child-div">
+           <div class="input-div">
+           
+               <input id="math" type="text" placeholder="math"><br>
+               <input id="science" type="text" placeholder="science"><br>
+               <input id="english" type="text" placeholder="english"><br>
+               <input id="social" type="text" placeholder="social studies"><br>
+               <input id="cs" type="text" placeholder="computer science"><br>
+               <button onclick="clicks()" >submit</button>
+               <p id="result1"></p>
+
+           </div>
+        </div>
+    </div>
+    <script>
+        const clicks = () => {
+            var math = document.getElementById("math").value;
+            var science = document.getElementById("science").value;
+            var english = document.getElementById("english").value;
+            var social = document.getElementById("social").value;
+            var cs = document.getElementById("cs").value;
+            var sum = parseFloat(math)+parseFloat(science)+parseFloat(english)+parseFloat(social)+parseFloat(cs);
+            var result = (sum / 500 * 100);
+            document.getElementById("result1").innerHTML = "The result of the candidate is "+result+" %";
+            if(result <= 35){
+                alert("Sorry you are fail...");
+            }else if(result <= 89){
+                alert("Congratulation You have pass the exam...");
+            }else{
+                alert("Exellent you are topper of the exam...");
+            }
+            
+        };
+       
+         </script>
+    
+</body>
+
+</html>

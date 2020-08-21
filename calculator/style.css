@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.main-div{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(25,73,106,1),rgba(235,61,137,1)) ;
+    clip-path: polygon(0% 0% , 100% 0%, 100% 90%, 0% 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.main-div h1{
+    margin-bottom: 20px;
+    color:#EB9A26 ;
+    letter-spacing: 4px;
+    transition: 0.6s;
+    cursor: pointer;
+    
+}
+.main-div h1:hover{
+    transform: scale(0.9);
+}
+.inside-div{
+    width: 550px;
+    height: 450px;
+    background-color:#EB9A26 ;
+    border-radius: 10px;
+    border: 2px solid white ;
+}
+.input-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.input-div input{
+    margin-top: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color:#EB9A26 ;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+ 
+   
+}
+::placeholder{
+    color: white;
+    font-size: 1.2rem;
+    text-align:center ;
+}
+.result-div{
+    width: 400px;
+    height: 50px;
+   
+    margin: 30px auto;
+    display: grid;
+    place-content: center;
+}
+.result-div p{
+    text-align: center;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+.btn-div{
+    width: 400px;
+    height: 40px;
+    margin: 110px auto;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn-div button{
+    width: 60px;
+    height: 60px;
+    outline: none;
+    background-color:#EB9A26 ;
+    color: white;
+    border-radius:100% ;
+    font-size: 2rem;
+    transition: 0.3s;
+    border: 1px solid white;
+}
+.btn-div button:hover{
+    background-color: white;
+    color:#EB9A26 ;
+    transform: scale(1.2);
+}
